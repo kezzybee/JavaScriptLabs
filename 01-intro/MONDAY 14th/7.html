@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+
+
+<style>
+tr, td {border: 2px solid black; border-spacing: 5px; }
+</style>
+</head>
+
+<body>
+
+ 
+<script>
+ 
+let operator
+let firstnumber
+
+function digits(num){
+
+    if(num==0){
+        if(scrn.value!=""){
+        scrn.value=scrn.value + num
+        }
+    }
+
+
+function operations(sign){
+    firstnumber=scrn.value,
+    operator=sign,
+    scrn.value=""
+    }
+
+function showResults(){
+    let secondNumber = scrn.value
+        if(operator=='+')
+        {
+        scrn.value=parseInt(firstnumber) + parseInt(secondNumber)
+        }
+    }
+}
+
+</script>
+ 
+ 
+ 
+<input id="scrn"  type="text"/>
+<table>
+<tr>
+<td><input id="btn0" type="button" value="0" onclick="digits(0)"/></td>
+<td><input id="btn1" type="button" value="1" onclick="digits(1)"/></td>
+<td><input id="btn2" type="button" value="2" onclick="digits(2)"/></td>
+<td><input id="btn_plus" type="button" value="+" onclick="operations('+')"/></td>
+</tr>
+<tr>
+<td><input id="btn3" type="button" value="3" onclick="digits(3)"/></td>
+<td><input id="btn4" type="button" value="4" onclick="digits(4)"/></td>
+<td><input id="btn5" type="button" value="5" onclick="digits(5)"/></td>
+<td><input id="btn_Mult" type="button" value="x" onclick="operations('x')"/></td>
+</tr>
+<tr>
+<td><input id="btn6" type="button" value="6" onclick="digits(6)"/></td>
+<td><input id="btn7" type="button" value="7" onclick="digits(7)"/></td>
+<td><input id="btn8" type="button" value="8" onclick="digits(8)"/></td>
+<td><input id="btn_Sub" type="button" value="-" onclick="operations('-')"/></td>
+</td>
+<tr>
+<td><input id="btn9" type="button" value="9"/></td>
+<td><input id="btn_clear" type="button" value="C"/></td>
+<td><input id="btn_equal" type="button" value="=" onclick="showResults()"/></td>
+<td><input id="btn_Div" type="button" value="/" onclick="operations('/')"/></td>
+</tr>
+</table>
+
+
+</html>

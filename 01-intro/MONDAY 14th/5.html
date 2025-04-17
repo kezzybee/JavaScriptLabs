@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+
+<script>
+
+    function addition(){
+        
+
+        if(num1.value==""){
+            alert("Please enter First Number")
+        }
+        
+        else{
+
+            if(num2.value==""){
+
+            alert("Please enter Second Number")
+
+            }
+        
+            else{
+
+            let A = parseInt(num1.value)
+            let B = parseInt(num2.value)
+            num3.value = A + B
+            }
+        }
+
+    }
+
+
+
+</script>
+
+
+First Number: <input
+    id="num1"
+    type="text"
+/>
+
+<br>
+
+Second Number: <input  
+    id="num2"
+    type="text"
+/>
+
+<br>
+
+<input  
+    id="btn+"
+    type="button"
+    value="+"
+    onClick="addition()"
+/>
+
+<br>
+Result: <input  
+    id="num3"
+    type="text"
+/>
+    
+</body>
+
+</html>

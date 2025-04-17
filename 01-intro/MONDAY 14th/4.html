@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+
+<script>
+
+    function addition() {
+        let A =num1.value
+        let B = num2.value
+
+        let result = parseInt(A) + parseInt(B)
+
+        num3.value = result
+    }
+
+    function subtract() {
+        let A =num1.value
+        let B = num2.value
+
+        let result = parseInt(A) - parseInt(B)
+
+        num3.value = result
+    }
+
+    function multiply() {
+        let A =num1.value
+        let B = num2.value
+
+        let result = parseInt(A) * parseInt(B)
+
+        num3.value = result
+    }
+
+    function divide() {
+        let A =num1.value
+        let B = num2.value
+
+        let result = parseInt(A) / parseInt(B)
+
+        num3.value = result
+    }
+
+
+</script>
+
+
+First Number: <input
+    id="num1"
+    type="text"
+/>
+
+<br>
+
+Second Number: <input  
+    id="num2"
+    type="text"
+/>
+
+<br>
+
+<input  
+    id="btn1"
+    type="button"
+    value="+"
+    onClick="addition()"
+/>
+
+<input  
+    id="btn1"
+    type="button"
+    value="-"
+    onClick="subtract()"
+/>
+
+<input  
+    id="btn1"
+    type="button"
+    value="*"
+    onClick="multiply()"
+/>
+
+<input  
+    id="btn1"
+    type="button"
+    value="/"
+    onClick="divide()"
+/>
+
+<br>
+
+Result: <input  
+    id="num3"
+    type="text"
+/>
+    
+</body>
+
+</html>
